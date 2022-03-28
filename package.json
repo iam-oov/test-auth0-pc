@@ -1,0 +1,23 @@
+{
+  "name": "test-auth0-pc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:iam-oov/test-auth0-pc.git",
+  "author": "hinojsa <osvaldo.javier14@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.27.4",
+    "fastify-auth0-verify": "^0.7.0",
+    "fastify-env": "^2.1.1"
+  },
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "lint": "eslint --fix --ext .js,.jsx ."
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15"
+  }
+}
