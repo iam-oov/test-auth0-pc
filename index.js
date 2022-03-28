@@ -3,6 +3,8 @@ const server = require('fastify')({
 });
 const fastifyAuth0 = require('fastify-auth0-verify');
 
+const PORT = 3001;
+
 // register - fastify-auth0-verify
 server.register(fastifyAuth0, {
   domain: 'https://dev-c6aj47u9.us.auth0.com/',
@@ -32,7 +34,7 @@ blogRoutes.forEach((route) => {
   server.route(routeDecorator);
 });
 
-server.listen(3001, (err, address) => {
+server.listen(PORT, (err, address) => {
   if (err) {
     server.log.error(err);
     process.exit(1);
